@@ -1,0 +1,65 @@
+* {
+  margin: 0px;
+}
+
+/* CSS de la barra de navegacion */
+
+.navbar {
+  top: 0;
+  padding-left: 10px;
+  background-color: var(--colorO3);
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar#search-bar {
+  background: var(--colorO3);
+  position: absolute;
+  margin-left: 120px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.navbar_title {
+  margin: 15px;
+  font-size: 25px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: var(--colorO2);
+  text-decoration: none;
+  justify-content: center;
+}
+
+.navbar_title:hover {
+  text-decoration: none;
+  color: var(--colorC1);
+}
+
+.nav_logo {
+  display: inline-block;
+  justify-content: center;
+  width: 10%;
+  height: 10%;
+}
+
+.navbar_list {
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav_link {
+  display: block;
+  font-size: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 0.5rem 1rem;
+  color: var(--colorO2);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out;
+}
