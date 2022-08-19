@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(logo.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgb(48, 86, 168);
+    font-family: sans-serif;
+}
+
+
+
+.accountbox{
+    width: 320px;
+    height: 95%;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: content-box;
+    padding: 0px 30px;
+    border-radius: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about{
+    width: 320px;
+    height: 70%;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    top: 6%;
+    left: 3%;
+    position: absolute;
+    transform: translate(-5%,-5%);
+    box-sizing: content-box;
+    padding: 0px 30px;
+    border-radius: 20px;
+    box-sizing: content-box;
+    justify-content: center;
+}
+
+.abouttext{
+    display: inline;
+    justify-content: right;
+    font-size: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text{
+    font-size: 1110%;
+}
+
+.hktitle{
+    font-size: 180%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.accountbox img{
+    height: 8%;
+    align-self: left;
+}
+
+.accountbox b{
+    display: inline-block;
+    padding: 2px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.accountbox h1{
+    display: inline;
+    border: 1rem;
+}
+
+.accountbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.accountbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.accountbox input[type="text"],[type="number"],[type="password"],[type="email"]{
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background: transparent;
+    outline: none;
+    height: 50px;
+}
+
+.accountbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 30px;
+    background: rgb(0, 140, 255);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.accountbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(52, 159, 209);
+    color: rgb(0, 0, 0);
+}
