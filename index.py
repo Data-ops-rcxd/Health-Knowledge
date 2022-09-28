@@ -6,6 +6,13 @@ app = Flask(__name__)
 def home():
     return render_template("home.html")
 
+@app.route('/Crearcuenta')
+def cc():
+    return render_template("cc.html")
+
+@app.route('/Iniciarsesion')
+def ises():
+    return render_template("ises.html")
+
 if __name__ == '__main__':
     app.run(debug=True, port = 4269)
-
