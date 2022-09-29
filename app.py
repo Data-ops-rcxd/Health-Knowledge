@@ -14,5 +14,11 @@ def cc():
 def ises():
     return render_template("ises.html")
 
+@app.route('/pprincipal')
+def principal():
+    return render_template("pprincipal.html")
+
 if __name__ == '__main__':
     app.run(debug=True, port = 4269)
+
+## Hacer template que muestre un gráfico y el chat perron ##
