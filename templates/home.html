@@ -1,0 +1,96 @@
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Health & Knowledge</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+    <link rel="stylesheet" href="static/css/mainv2.css" />
+    <link rel="icon" href="static/img/icon.jpeg"/>
+    <!--<script src=""></script>-->
+  </head>
+  
+  <link rel="stylesheet" href="static/css/body.css">
+
+  <body>
+    <!--Header-->
+    <figure class = banner></figure>
+    <div class="header">
+        <div class="titleframe">
+            <h1 class="title">Health & Knowledge</h1>
+        </div>
+        <div class="selections">
+            <a href=/about class="hbttons">About</a>
+            <a href=/singup class="hbttons">Sign up</a>
+            <a href=/login class="hbttons">Log In</a>
+        </div>
+    </div>
+    <!--Main... (About Text)-->
+    <div class="contmt">
+        <p class="abtxt">
+            We have the goal of providing awareness about the most important diseases around the world, like the common flu or the recent Covid-19
+        </p>
+    </div>
+    <!--Main Start-->
+    <div class="kncont">
+        <div class="imgcont">
+            <p class="covidimg"></p>
+            <p class="imgtitle">Covid-19</p>
+        </div>
+        <h1 class="info1">Know about the most important diseases in the world</h1>
+    </div>
+    <!--Main graph part-->
+    <div class="graphcont">
+        <div class="graph">
+            <canvas id="testChart" ></canvas>
+            <script>
+                Chart.defaults.global.defaultFontColor = "#fff";
+                var ctx = document.getElementById("testChart")
+                var testChart = new Chart(ctx, {
+                    type: "bar",
+                    data: {
+                        labels: {{ labels | safe }},
+                        datasets: [
+                            {
+                                label: "Total deads",
+                                data: {{ values | safe }},
+                                fill: true,
+
+                                backgroundColor: "rgb(255,255,255)",
+                                borderColor: "rgb(255,0,0)",
+                                hoverOffset: 4,
+                                lineTension: 0.1,
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true
+                    }
+                });
+            </script>
+        </div>
+        <div class="frame2">
+            <p class="txt">Graphs with the most current data</p>
+            <!--<a href=/home class="subsbutton">
+                Subscribe Now!
+            </a>-->
+        </div>
+    </div>
+    <!--Last part-->
+    <div class="contlst">
+        <div class="contmsm">
+            <h1 class="infomsm">Get news about diseases and what is current happening, with our standard membership</h1>
+            <p class="msmimg"></p>
+        </div>
+        <a href=/about class="subsbutton">
+            Subscribe Now!
+        </a>
+        <div class="contchat">
+            <p class="chatimg"></p>
+            <h1 class="infochat">Talk with an specialist with our premium membership</h1>
+        </div>
+    </div>
+  </body>
