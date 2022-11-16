@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    row-gap: 1rem;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.backbtfig{
+    position: absolute;
+    width: 748px;
+    height: 55px;
+    left: 0;
+    top: 0;
+    background: #4DC1E5;
+    transform: matrix(0.15,0,-1,1,-345,-15);
+    z-index: 1;
+}
+.back{
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Gruppo';
+    font-style: normal;
+    text-align: center;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    color: #000000;
+    z-index: 2;
+}
+.back:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 100%;
+    height: 66px;
+    left: 0px;
+    top: 58px; 
+}
+.title{
+    width: 170px;
+    height: 46px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 46px;
+    text-align: center;
+    color: #000000;
+}
+.maingraphcont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 41px;
+    width: 100%;
+    height: 550px;
+    left: 0px;
+    top: 178px;
+}
+.maingraph{
+    width: 1060px;
+    height: 550px;
+    background: #ebebeb;
+}
+.filter{
+    width: 272px;
+    height: 45px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+    left: 0%;
+    right: 0%;
+    top: 2.22%;
+    bottom: 0%;
+    background: #01ECFB;
+}
+.filter:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+.infocont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    height: 537px;
+    left: 0px;
+    top: 820px;
+}
+.infotitle{
+    width: 90%;
+    height: 46px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 46px;
+    text-align: left;
+    color: #000000;
+}
+.infozone{
+    width: 1368px;
+    height: 385px;
+}
+.infotext{
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 46px;
+    text-align: left;
+    color: #000000;
+}
+.sources{
+    width: 90%;
+    height: 23px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 23px;
+    text-align: left;
+    color: #000000;
+}

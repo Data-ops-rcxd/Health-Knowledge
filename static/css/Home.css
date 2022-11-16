@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    row-gap: 4rem;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.banner{
+    position: absolute;
+    width: 748px;
+    height: 55px;
+    left: 0;
+    top: 0;
+    background: #4DC1E5;
+    transform: matrix(0.55,0,1.5,1.25,-50,-10);
+    z-index: 1;
+}
+.header{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    gap: 25%;
+    width: 100%;
+    height: 55px;
+    
+}
+.titleframe{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    width: 423px;
+    flex: none;
+    z-index: 2;
+    background: url(imgs/Name.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.title{
+    width: 403px;
+    height: 35px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;  
+    text-decoration: none;
+    margin: 0;
+}
+.selections{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    align-items: center;
+    padding: 0px;
+    width: 30%;
+    height: 70%;
+    order: 1;
+    flex-grow: 0;
+}
+.hbttons{
+    background-color: white;
+    width: 90px;
+    height: 50%;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+}
+.contmt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+    width: 100%;
+    height: 50%;
+
+}
+.abtxt{
+    width: 70%;
+    height: 56px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+    background-color: white;
+    padding: 1rem;
+}
+.kncont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 5%;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 50%;
+}
+.imgcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    width: 180px;
+    height: 200px;
+}
+.covidimg{
+    width: 180px;
+    height: 150px;
+    background: url(imgs/coronavirus-covid-19.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imgtitle{
+    width: 55px;
+    height: 14px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 14px;
+    text-align: center;
+    color: #000000;
+    background-color: white;
+    border-radius: 0.2rem;
+}
+.info1{
+    width: 617px;
+    height: 82px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+.graphcont{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 0px;
+    width: 100%;
+    height: 50%;
+}
+.graph{
+    width: 731px;
+    height: 380px;
+    background: #4DC1E6;
+}
+.frame2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+    width: 304px;
+    height: 137px
+}
+.txt{
+    width: 704px;
+    height: 62px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+    background-color: white;
+    margin: 0;
+}
+.subsbutton{
+    background: #01ECFB;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+.contlst{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 45px;
+    width: 100%;
+    height: 50%;
+}
+.contmsm{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 103px;
+    width: 699px;
+    height: 160px;
+}
+.infomsm{
+    width: 396px;
+    height: 133px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+.msmimg{
+    width: 200px;
+    height: 160px;
+    background: url(imgs/561127.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contchat{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
+    width: 796px;
+    height: 312px;
+}
+.infochat{
+    width: 475px;
+    height: 68px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+}
+.chatimg{
+    width: 305px;
+    height: 270px;
+    background: url(imgs/chat.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}

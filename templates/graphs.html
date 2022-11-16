@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Health & Knowledge</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
+  <link rel="stylesheet" href="static/css/graphs.css"/>
+  <link rel="icon" href="static/img/icon.png"/>
+</head>
+<body>
+    <!--back button-->
+    <figure class="backbtfig"></figure>
+    <a class="back" href="/lobby">←</a>
+
+    <div class="header">
+        <p class="title">Graphs</p>
+    </div>
+
+    <div class="maingraphcont">
+        <script>
+            function alerta(){
+                alert("funciona");
+            }
+        </script>
+        <div class="maingraph">
+            <!--graphs generator script-->
+            <canvas id="testChart"></canvas>
+            <script>
+                Chart.defaults.global.defaultFontColor = "#000000";
+                var ctx = document.getElementById("testChart")
+                var testChart = new Chart(ctx, {
+                    type: "bar",
+                    data: {
+                        labels: {{ labels | safe }},
+                        datasets: [
+                            {
+                                label: "Total deads",
+                                data: {{ values | safe }},
+                                fill: true,
+                                backgroundColor: "rgb(0,255,255)",
+                                borderColor: "rgb(0,255,0)",
+                                hoverOffset: 4,
+                                lineTension: 0.1,
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true
+                    }
+                });
+            </script>
+        </div>
+        <button class="filter" onclick="alerta()">Apply Filter</button>
+    </div>
+    <div class="infocont">
+        <p class="infotitle">Informations about:</p>
+        <div class="infozone">
+            <p class="infotext">{{labels}}</p>
+        </div>
+        <p class="sources">Sources: <a href="{{url}}">https://www.kaggle.com/</a></p>
+    </div>
+</body>
+</html>

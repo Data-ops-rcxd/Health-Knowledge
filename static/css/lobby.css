@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    row-gap: 1rem;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+.backbtfig{
+    position: absolute;
+    width: 748px;
+    height: 55px;
+    left: 0;
+    top: 0;
+    background: #4DC1E5;
+    transform: matrix(0.15,0,-1,1,-345,-15);
+    z-index: 1;
+}
+.backbutton{
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Gruppo';
+    font-style: normal;
+    text-align: center;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    color: #000000;
+    z-index: 2;
+}
+.backbutton:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 25px;
+    width: 100%;
+    height: 266px;
+    left: 0px;
+    top: 28px;
+}
+.nameimg{
+    width: 868px;
+    height: 90px;
+    background: url(imgs/Name.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.desc{
+    width: 100%;
+    height: 49px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 100%;
+    font-size: 30px;
+    line-height: 39px;
+    text-align: center;
+    color: #000000;
+}
+.optionscont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 170px;
+    width: 100%;
+    height: 385px;
+    left: 0px;
+    top: 381px;
+}
+.graphoptcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 31px;
+    width: 224px;
+    height: 296px;
+}
+.graphoptimg{
+    width: 224px;
+    height: 226px;
+    background: url(imgs/chart.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.graphopttitle{
+    width: 142px;
+    height: 39px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 39px;
+    text-align: center;
+    color: #000000;
+}
+.newsoptcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 25px;
+    width: 228px;
+    height: 296px;
+}
+.newsoptimg{
+    width: 228px;
+    height: 232px;
+    background: url(imgs/561127.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.newsopttitle{
+    width: 101px;
+    height: 39px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 39px;
+    text-align: center;
+    color: #000000;
+}
+.chatoptcont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 25px;
+    width: 226px;
+    height: 290px;
+}
+.chatoptimg{
+    width: 226px;
+    height: 226px;
+    background: url(imgs/chat.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.chatopttitle{
+    width: 90px;
+    height: 39px;  
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 39px;
+    text-align: center;
+    color: #000000;
+}

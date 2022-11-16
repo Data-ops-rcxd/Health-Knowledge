@@ -1,0 +1,199 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-size: 15rem;
+    background-position: center;
+    background-repeat: repeat;
+    background-color: rgb(255, 255, 255);
+    font-family: sans-serif;
+}
+.clcbttn{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    text-align: center;
+    color: #001aff;
+    font-family: 'Gruppo';
+    font-style: normal;
+}
+.clcbttn:hover{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-decoration: none;
+    text-align: center;
+    color: #00e1ff;
+    font-family: 'Gruppo';
+    font-style: normal;
+}
+.accountbox{
+    width: 320px;
+    height: auto;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    top: 50%;
+    left: 49%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: content-box;
+    padding: 1rem 1rem;
+    margin: 1rem;
+    border-radius: 20px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    display: block;
+}
+.b{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1rem;
+}
+.logo{
+    height: 74px;
+    width: 100px;
+    background: url(imgs/logo1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.about{
+    width: 320px;
+    height: 70%;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    top: 15%;
+    left: 15%;
+    position: absolute;
+    transform: translate(-5%,-5%);
+    box-sizing: content-box;
+    padding: 0px 30px;
+    border-radius: 20px;
+    justify-content: center;
+}
+.contenedor{
+    width: 15rem;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 35%;
+    right: 20%;
+}
+.botonesprincipales{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    box-sizing: content-box;
+    flex-wrap: wrap;
+    gap: 1rem; 
+}
+.nav-gl { 
+    border-radius: 1rem;
+    width: 50%;
+    background-color: rgb(44, 125, 216);
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 120%;
+}
+.nav-gl a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-family: 'Gruppo';
+    font-style: normal;
+}
+.abouttext{
+    display: inline;
+    justify-content: right;
+    font-size: 10%;
+}
+.text{
+    font-size: 1110%;
+    font-family: 'Gruppo';
+    font-style: normal;
+}
+.hktitle{
+    font-size: 180%;
+    font-family: 'Gruppo';
+    font-style: normal;
+}
+.accountbox img{
+    height: 8%;
+    align-self: left;
+}
+.accountbox b{
+    display: inline-block;
+    padding: 2px;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.accountbox h1{
+    display: inline;
+    border: 1rem;
+}
+.accountbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.accountbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.accountbox input[type="text"],[type="number"],[type="password"],[type="email"]{
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    background: transparent;
+    outline: none;
+    height: 50px;
+}
+.accountbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 30px;
+    background: rgb(0, 140, 255);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 20px;
+    margin: 0;
+    font-family: 'Gruppo';
+    font-style: normal;
+}
+.accountbox input[type="submit"]:hover{
+    cursor: pointer;
+    background: rgb(115, 211, 255);
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: 'Gruppo';
+    font-style: normal;
+}
+.backbtfig{
+    position: absolute;
+    width: 748px;
+    height: 55px;
+    left: 0;
+    top: 0;
+    background: #4DC1E5;
+    transform: matrix(0.15,0,-1,1,-386,-32);
+    z-index: 1;
+}
+.back{
+    position: absolute;
+    text-decoration: none;
+    font-family: 'Gruppo';
+    font-style: normal;
+    text-align: center;
+    padding-left: 2rem;
+    padding-top: 0.5rem;
+    padding-right: 2rem;
+    padding-bottom: 0.5rem;
+    color: #000000;
+    z-index: 2;
+}
+.back:hover{
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+}
