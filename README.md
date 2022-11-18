@@ -1,6 +1,6 @@
 Link to the page (Heroku): https://health-and-knowledge.herokuapp.com/
 
-*Under construction*
+**Under construction**
 
 Created by:
 - David Tache Ardila
