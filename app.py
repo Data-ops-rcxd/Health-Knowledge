@@ -50,6 +50,14 @@ def lobby():
 def login():
     return render_template("login.html")
 
+@app.route('/chat')
+def chat():
+    return render_template("chat.html")
+
+@app.route('/news')
+def news():
+    return render_template("news.html")
+
 @app.route('/graphs')
 def graphs():
     return render_template("graphs.html", labels=labels, values=str(values), url=testurl)
