@@ -20,8 +20,34 @@
     <!--header-->
     <div class="header">
         <p class="nameimg"></p>
-        <p class="desc">UNDER CONSTRUCTION...</p>
-        <p class="desc">Option will be available soon..</p>
+        <p class="desc"><b>Chat Bot</b></p>
+        <p class="desc">Talk with our bot to search info or make an appointment.</p>
     </div>
+    <div class="chatcont">
+        <button class="chatbox__button">Start Chat</button>
+        <div class="chat">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Chat support</h4>
+                        <p class="chatbox__description--header">Hi. How can I help you?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="message here...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='chatbot_archives/chatbot.js') }}"></script>
+
 </body>
 </html>
