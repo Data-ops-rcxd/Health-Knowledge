@@ -1,0 +1,82 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How are you",
+          "Is anyone there?",
+          "Hello",
+          "Good day"
+        ],
+        "responses": [
+          "Hey :-)",
+          "Hello, thanks for visiting us, what can I do for you?",
+          "Hi there, what can I do for you?",
+          "Hi there, how can I help?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye"],
+        "responses": [
+          "See you later, thanks for visiting us",
+          "Have a nice day",
+          "Bye! Come back again soon."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure"]
+      },
+      {
+        "tag": "payments",
+        "patterns": [
+          "Do you take credit cards?",
+          "Do you accept Mastercard?",
+          "Can I pay with Paypal?",
+          "Are you cash only?"
+        ],
+        "responses": [
+          "We accept VISA, Mastercard, Nequi",
+          "We accept most major credit cards",
+          "We do not accept paypal"
+        ]
+      },
+      {
+        "tag": "Questions",
+        "patterns": [
+          "medical centers available?",
+          "can you make appointments?",
+          "i want to make an appointment"
+        ],
+        "responses": [
+          "The medical centers available (at the moment only in Barranquilla) for appointments are the following:<br>- SaludTotal EPS (Number: 605 3698585 or 605 3698555)<br>- Sura EPS (National number: 01 8000 519 519)<br>- Christus Sinergia (National number: 01 8000 934 310)"
+        ]
+      },
+      {
+        "tag": "Infocovid",
+        "patterns": [
+          "covi-19",
+          "what is covid-19?",
+          "Pandemic"
+        ],
+        "responses": [
+          "Coronavirus disease (COVID-19) is an infectious disease caused by the SARS-CoV-2 virus. COVID-19 affects different people in different ways. Most infected people will develop mild to moderate illness and recover without hospitalization."
+        ]
+      },
+      {
+        "tag":"Infoflu",
+        "patterns":[
+          "flu",
+          "what is the flu?",
+          "what is flu?"
+        ],
+        "responses":[
+          "Flu (influenza) is an infection of the nose, throat and lungs, which are part of the respiratory system. Influenza is commonly called the flu, but it's not the same as stomach 'flu0' viruses that cause diarrhea and vomiting.<br>Most people with the flu get better on their own. But sometimes, influenza and its complications can be deadly."
+        ]
+      }
+    ]
+  }
