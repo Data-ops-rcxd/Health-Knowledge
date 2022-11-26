@@ -69,3 +69,213 @@ body{
     text-align: center;
     color: #000000;
 }
+.chatcont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    gap: 41px;
+    width: 100%;
+    height: 550px;
+    left: 0px;
+    top: 178px;
+}
+.chat{
+    align-items: center; justify-content: center; flex-direction: column;
+    display: flex;
+    width: 1060px;
+    height: 550px;
+    background: #ffffff;
+}
+.chatbox__button{
+    width: 272px;
+    height: 45px;
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 23px;
+    text-align: center;
+    color: #000000;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #01ECFB;
+}
+.chatbox__button:hover{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+/* CHATBOX
+=============== */
+
+/* CONTENT IS CLOSE */
+.chatbox__support {
+    display: flex;
+    flex-direction: column;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 100%;
+    z-index: -123456;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+/* CONTENT ISOPEN */
+.chatbox--active {
+    z-index: 123456;
+    opacity: 1;
+
+}
+
+.send__button {
+    padding: 1rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+/* HEADER */
+.chatbox__header{
+    align-items: center;
+    padding: 1rem;
+    top: 0;
+    background: rgb(255, 255, 255);
+}
+
+/* MESSAGES */
+.chatbox__messages {
+    height: 100%;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.messages__item {
+    background: orange;
+    max-width: 60.6%;
+    width: fit-content;
+}
+
+.chatbox__support {
+    background: #ffffff;
+    width: 100%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.chatbox__image--header {
+    margin-right: 10px;
+}
+
+.chatbox__heading--header {
+    text-decoration: none;
+    font-family: 'Gruppo';
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.chatbox__description--header {
+    text-decoration: none;
+    font-family: 'Gruppo';
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+}
+
+/* Messages */
+.chatbox__messages {
+    padding: 0 20px;
+}
+
+.messages__item {
+    margin-top: 10px;
+    background: #12ced4;
+    padding: 8px 12px;
+    max-width: 70%;
+}
+
+.messages__item--operator {
+    margin-left: auto;
+}
+
+.messages__item--visitor {
+    margin-right: auto;
+}
+
+.messages__item--visitor,
+.messages__item--typing {
+    white-space: break-spaces;
+    text-decoration: none;
+    font-family: 'Gruppo';
+    font-size: 1.7rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: rgb(42, 72, 243);
+    color: white;
+}
+
+
+.messages__item--operator {
+    text-decoration: none;
+    font-family: 'Gruppo';
+    font-size: 1.7rem;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: rgb(79, 224, 98);
+    color: white;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background: var(--secondaryGradient);
+    box-shadow: var(--secondaryBoxShadow);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 20px;
+}
+
+.chatbox__footer input {
+    width: 80%;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+    text-align: left;
+}
+
+.chatbox__send--footer {
+    text-decoration: none;
+    font-family: 'Gruppo';
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: rgb(79, 224, 98);
+}
+.chatbox__button button,
+.chatbox__button button:focus,
+.chatbox__button button:visited {
+    padding: 10px;
+    background: white;
+    border: none;
+    outline: none;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
